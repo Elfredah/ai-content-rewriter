@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Friendly Content Rewriter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Original vs Friendly Copy</h1>
+  <div id="content"></div>
+
+  <script>
+    fetch('output.json')
+      .then(response => response.json())
+      .then(data => {
+        const container = document.getElementById('content');
+        data.forEach(pair => {
+          const block = document.createElement('div');
+          block.className = "block";
+          block.innerHTML = `
+            <p><strong>Original:</strong> ${pair.original}</p>
+            <p><strong>Friendly:</strong> ${pair.friendly}</p>
+          `;
+          container.appendChild(block);
+        });
+      });
+  </script>
+</body>
+</html>

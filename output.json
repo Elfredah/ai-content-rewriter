@@ -1,0 +1,14 @@
+[
+  {
+    "original": "You are not allowed to access this page.",
+    "friendly": "It looks like you don\u2019t have permission to view this page."
+  },
+  {
+    "original": "The operation failed due to an unknown error.",
+    "friendly": "Something went wrong. Please try again or contact support."
+  },
+  {
+    "original": "Submit your form to proceed.",
+    "friendly": "Please send your form to continue."
+  }
+]
